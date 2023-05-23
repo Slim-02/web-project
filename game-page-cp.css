@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+body{
+	margin: 0;
+	padding: 0;
+	color: black;
+	background-color: black;
+}
+p{
+	font-family: Arial;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	cursor: pointer;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+hr{
+	height: 1px;
+	border: none;
+	background-color: white;
+}
+
+.site_header{
+	position: fixed;
+  padding: 18px 0 18px 0;
+  margin: 0;
+  width: 100%;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+#menu{
+  position: fixed;
+  right: 1.2rem;
+  top: 1.2rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  z-index: 10;
+}
+
+.menu-line1{
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: .6s;
+}
+
+.menu-line2{
+  width: 80%;
+  height: 2px;
+  margin-top: .7rem;
+  background: #fff;
+  transition: .6s;
+}
+
+.rotate{
+  transform: rotateZ(180deg)
+}
+.rotate1{
+  background: #212121;
+  transform: rotateZ(45deg);
+}
+.rotate2{
+  background: #212121;
+  width: 100%;
+  transform:  translate(0,-0.8rem) rotateZ(-45deg);
+}
+.nav-page1{
+  position: fixed ;
+  top:0 ;
+  left: 0;
+  background: whitesmoke;
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #212121;
+  transform: translate(0,-100%);
+  transition: .5s;
+}
+.nav-page1 span{
+  padding: 1rem;
+}
+.nav-page2{
+  position: fixed;
+  top:0 ;
+  left: 60%;
+  background: whitesmoke;
+  width: 40%;
+  height: 20vh;
+  transition: .8s;
+  transform: translate(0,-100%);
+}
+.transform{
+  transform: translate(0,0);
+}
+
+.mid-picture{
+	width: 100%;
+	height: 55vh;
+	background: url("cyberpunk.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-position-y: -150px;
+}
+.game-page-content{
+	color: white;
+	position: relative;
+}
+.page-logo{
+	width: 30%;
+	left: 35%;
+	position: absolute;
+	top: -100px;
+}
+
+.game-info{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 1fr 1.3fr;
+	grid-gap: 10px;
+	background-color: #fdf800;
+	width: 100%;
+}
+.game-desc{
+	padding: 5px 0px 5px 15px;
+	color: black;
+	font-size: 20px;
+	font-family: Tomorrow, Arial;
+	font
+}
+.game-video{
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	padding: 20px;
+}
+
+
+.gallery{
+	padding: 30px;
+	min-height: 300px;
+}
+.gallery_h{
+	color: rgb(4,218,246);
+	font-family: Tomorrow, Arial;
+}
+.gallery-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.big-img{
+	padding: 10px;
+	display: flex;
+}
+.small-imgs{
+	padding: 10px 10px 20px 10px;
+}
+.small-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+
+.system-requirements{
+	margin: 40px 60px;
+	font-family: BlenderPro-Bold, Arial;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.container-cp {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+      margin: 0;
+  margin-top: 1.5rem;
+}
+
+.bg-footer {
+  background-color: #33383c;
+  font-family: 'Raleway', sans-serif;
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-heading {
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+}
+.footer-link-text{
+	color: #acacac;
+	text-decoration: underline;
+	text-underline-position: under;
+	transition: color 0.2s;
+}
+.footer-link-text:hover{
+	color: white;
+}
+
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.list-inline-item {
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  display: inline-block;
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 16px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook {
+  transition: transform 1s ease 0s;
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+.facebook::before{
+
+  content: "\f39e";
+  display: flex;
+  margin: 10px 0 0 12.5px;
+}
+
+.twitter {
+  transition: transform 1s ease 0s;
+  background-color: #55acee;
+  color: #ffffff;
+}
+.twitter::before{
+  content: "\f099";
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.instagram {
+  transition: transform 1s ease 0s;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: #ffffff;
+}
+.instagram::before{
+  content: "\f16d";
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+/* HOVER */
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+  transform: rotate(360deg);
+}
+
+.footer-alt {
+  color: #acacac;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+
+  &:after {
+    content: '';
+    width: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    border-bottom: 3px solid #E0952E;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-cp {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-cp {
+    max-width: 540px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container-cp {
+    max-width: 960px;
+  }
+}
