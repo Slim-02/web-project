@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<title>Мой сайт</title>
+</head>
+<body>
+<div class="main_page">
+		<header class="site_header">
+			<div class="myname">Джумабаев Отабек</div>
+			<a href="../GameWiki.html">
+				<div class="logo">
+			    <div>GameWiki</div>
+			   	<div>
+			    	<img style="width: 30px; vertical-align: center;" src="../joystick.png">
+			    </div>
+			</div>
+			</a>
+
+		</header>
+	<div class="mid-pictures">
+		<div style="margin-left: 10px;">
+			<img class="mid-image" src="mid1.jpg">
+		</div>
+		<div>
+			<img class="mid-image" src="mid2.jpg">
+		</div>
+		<div style="margin-right: 10px;">
+			<img class="mid-image" src="mid3.jpg">
+		</div>
+	</div>
+	<div class="mid-text">
+			<h1 style="padding: 10px;">О МОЕЙ ЖИЗНИ</h1>
+	</div>
+		<div class="container">
+
+			<div class="biography">
+				<div class="bio-info">
+					<div style="font-size: 30px; font-weight: 400; padding: 10px; background-color: #BB5A3A; width: 50%;">
+						БИОГРАФИЯ
+					</div>
+					<div style="padding: 20px">
+						Я - Джумабаев Отабек Шухратович, родился в городе Ташкент 25 мая 2003 года. Также как и большинсвто детей моего возраста меня отдали в детский сад в 3 года. Там, изучая основы арифметики, чтения и речи, я находился и до 7 лет. В 7 лет я пошел в школу. Первые четыре года для меня прошли незаметно, я обрел новых друзей, продвинулся в учебе и уже начали появлятся интересы к различным профессиям. Старшие классы были, пожалуй, самыми запоминающимися в период обучения. В эти годы я часто задерживался с друзьями после учебы чтобы поболтать, поиграть в футбол или пойти в компьютерный клуб. Ближе к 10-му классу я уже начал подготавливаться к поступлению в университет, в связи с чем проводил меньше времени с одноклассниками.
+					</div>
+				</div>
+				<div>
+					<img style="width: 100%;" src="1.jpg">
+				</div>
+			</div>
+
+			<div class="bachelor">
+				<div style="display: flex; align-items: center">
+					<img style="width: 100%;" src="bachelor.jpg">
+				</div>
+				<div class="bio-info">
+						<div style="font-size: 30px; font-weight: 400; padding: 10px; background-color: #BB5A3A; width: 60%">
+							СТУДЕНЧЕСКИЕ ГОДЫ
+						</div>
+						<div style="padding: 20px">
+							Первый курс я провел в России, так как поступил в Казанский Федеральный Университет. Учеба там была сложной, но это не помешало мне спокойно сдать все экзамены 1-го и второго семестра. Летом, после 1-го учебного года, я прилетел обратно. На каникулах выяснилось, что мое здоровье сильно ухудшилось, в связи с чем мне пришлось перевестись на учебу в Узбекистан. В качестве нового учебного заведения я выбрал ТУИТ, где и прибываю по сей день.
+						</div>
+					</div>
+
+			</div>
+
+			<table class="mytable">
+				<tr class="first-row">
+						<td>ФИО</td>
+						<td>Возраст</td>
+						<td>Зарплата</td>
+						<td>Место работы</td>
+				</tr>
+				<tr>
+						<td>Джумабаев Отабек Шухратович</td>
+						<td>19</td>
+						<td>0$</td>
+						<td>Студент</td>
+				</tr>
+				<tr>
+						<td>Иванов Иван Иванович</td>
+						<td>25</td>
+						<td>500$</td>
+						<td>IT-Park</td>
+				</tr>
+				<tr>
+						<td>Марков Марк Маркович</td>
+						<td>30</td>
+						<td>2000$</td>
+						<td>IT-Park</td>
+				</tr>
+			</table>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img class="mid-image	" src="group1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img class="mid-image" src="group2.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img class="mid-image" src="group3.jpg" style="width:100%">
+			</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		</div>
+
+		<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 1800);
+		}
+		</script>
+
+
+<div class="contact-form">
+
+	<div style="font-size: 40px; text-align: center;">
+		ФОРМА ДЛЯ СВЯЗИ
+	</div>
+		<form style="width: 100%">
+			 <label class="form-label">Представьтесь</label><br>
+	 		 <input class="form-input" type="text" placeholder="Имя"><br>
+	 		 <label class="form-label" for="name">Введите вашу почту</label><br>
+	 		 <input class="form-input" type="text" placeholder="Эл. почта"><br>
+	 		 <label class="form-label" for="name">Введите сообщение</label><br>
+	 		 <input class="form-input" type="text" placeholder="Ваш Текст"><br>
+	 		 <input class="btn" type="submit" value="Отправить">
+		</form>
+
+
+</div>
+
+
+	</div>
+	<footer class="site_footer">
+		<hr>
+		<div style="margin: 50px 20px">Работу выполнил Джумабаев Отабек &#169;</div>
+		<hr>
+	</footer>
+</div>
+
+</body>
+</html>
